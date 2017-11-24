@@ -6,6 +6,6 @@ var app = express();
 
 require('./config/express')(app, config);
 
-app.listen(3000, function () {
+app.listen(config.port, function () {
   console.log('Express server is up on port ' + config.port);
 });

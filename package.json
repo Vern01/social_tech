@@ -10,6 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.4",
+    "glob": "^7.1.2",
+    "morgan": "^1.9.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "webpack-dev-server": "^2.9.4"

@@ -7,10 +7,14 @@ module.exports = {
 	resolve: {
 		modules: [__dirname, 'node_modules'],
 		alias: {
-			Header: 'app/components/Header.jsx',
 			Body: 'app/components/Body.jsx',
-			Home: 'app/components/Home.jsx',
-			About: 'app/components/About.jsx',
+			CenterContainer: 'app/components/CenterContainer.jsx',
+            H1: 'app/components/H1.jsx',
+            HDivider: 'app/components/HDivider.jsx',
+            Header: 'app/components/Header.jsx',
+			Paragraph: 'app/components/Paragraph.jsx',
+            Home: 'app/pages/Home.jsx',
+            About: 'app/pages/About.jsx',
 			BaseCss: 'app/styles/base.css'
 		},
 		extensions: ['.js', '.jsx']

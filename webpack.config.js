@@ -7,17 +7,22 @@ module.exports = {
 	resolve: {
 		modules: [__dirname, 'node_modules'],
 		alias: {
-			Body: 'app/components/Body.jsx',
-			CenterContainer: 'app/components/CenterContainer.jsx',
-            H1: 'app/components/H1.jsx',
-            HDivider: 'app/components/HDivider.jsx',
-            Header: 'app/components/Header.jsx',
-			Paragraph: 'app/components/Paragraph.jsx',
-            Home: 'app/pages/Home.jsx',
-            About: 'app/pages/About.jsx',
-			BaseCss: 'app/styles/base.css'
+			BaselineContainer: 'app/components/BaselineContainer',
+			Body: 'app/components/Body',
+			CenterContainer: 'app/components/CenterContainer',
+			FeatureContainer: 'app/components/FeatureContainer',
+            H1: 'app/components/H1',
+            HDivider: 'app/components/HDivider',
+            Header: 'app/components/Header',
+			HorizontalContainer: 'app/components/HorizontalContainer',
+			IconText: 'app/components/IconText',
+			Paragraph: 'app/components/Paragraph',
+			RoundBtn: 'app/components/RoundBtn',
+            Home: 'app/pages/Home',
+            About: 'app/pages/About',
+			BaseCss: 'app/styles/base'
 		},
-		extensions: ['.js', '.jsx']
+		extensions: ['.js', '.jsx', '.css']
 	},
 	module: {
 		loaders: [

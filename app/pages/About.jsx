@@ -1,4 +1,6 @@
 import React from 'react'
+import RoundBtn from 'RoundBtn'
+
 
 const Test = ({array}) => (
     <div>
@@ -10,10 +12,19 @@ const Test = ({array}) => (
 
 const array = ["This is a test.", "Testing one two."];
 
+const comp = [Test]
+
+const func = function () {
+    return RoundBtn
+};
+
 class About extends React.Component {
     render() {
+        let Comp = func();
         return (
-            <Test array={array}/>
+            <div className={"body"}>
+                <Comp>This is test</Comp>
+            </div>
         );
     }
 }

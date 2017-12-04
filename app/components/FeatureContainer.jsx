@@ -15,9 +15,9 @@ class FeatureContainer extends React.Component {
         return (
             <div className="feature-container">
                 <div className="feature-title-bar">
-                    <div className="feature-title">{this.props.title}</div>
+                    <div className="feature-title">{this.props.data.title}</div>
                 </div>
-                <Images images={this.props.images}/>
+                <Images images={this.props.data.images}/>
             </div>
         );
     }

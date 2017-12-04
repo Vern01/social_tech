@@ -4,7 +4,7 @@ class Paragraph extends React.Component {
     render() {
         return (
             <div className="p">
-                {this.props.children}
+                {this.props.data.text}
             </div>
         );
     }

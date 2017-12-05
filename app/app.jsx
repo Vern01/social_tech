@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom');
 
 ReactDOM.render(
   <div>
-  <form action="/test" method="get">
+  <form action="/register" method="post">
     <input type="text" name="login" placeholder="login"/>
     <br/>
     <input type="password" name="passwd" placeholder="passwd"/>

@@ -21,3 +21,9 @@ router.get('/test', function (req, res) {
   console.log("Hello World");
   res.end();
 });
+
+router.post('/register', function (req, res) {
+  let username = req.body.login,
+    password = req.body.passwd;
+  console.log(username);
+});

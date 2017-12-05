@@ -1,5 +1,6 @@
 var express = require('express'),
-  glob = require('glob');
+  glob = require('glob'),
+  bodyParser = require('body-parser');
 
 var logger = require('morgan');
 
@@ -11,6 +12,11 @@ module.exports = function(app, config) {
   // app.use(favicon(config.root + '/public/img/favicon.ico'));
   app.use(logger('dev'));
   app.use(express.static(config.root + '/public'));
+  app.use(bodyParser.json());
+
+  app.use(bodyParser.urlencoded({
+    extended: true
+  }));
 
   var controllers = glob.sync(config.root + '/app/controllers/*.js');
   controllers.forEach(function (controller) {

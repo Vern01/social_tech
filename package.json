@@ -9,6 +9,7 @@
   "author": "Andrew Mead",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.15.4",
     "firebase": "^4.6.2",
     "glob": "^7.1.2",

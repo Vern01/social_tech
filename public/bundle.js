@@ -9598,7 +9598,7 @@ ReactDOM.render(React.createElement(
   null,
   React.createElement(
     'form',
-    { action: '/test', method: 'get' },
+    { action: '/register', method: 'post' },
     React.createElement('input', { type: 'text', name: 'login', placeholder: 'login' }),
     React.createElement('br', null),
     React.createElement('input', { type: 'password', name: 'passwd', placeholder: 'passwd' }),

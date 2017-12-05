@@ -1,21 +1,23 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import HorizontalContainer from "HorizontalContainer";
 import RoundBtn from 'RoundBtn'
 
-let Buttons = ({buttons}) => (
+let Buttons = ({buttons, links}) => (
     <HorizontalContainer>
         {buttons.map((button, index) => (
-            <RoundBtn key={index} data={{"text": button}}/>
+            <Link key={index} to={"/" + links[index]}>
+                <RoundBtn data={{"text": button}}/>
+            </Link>
         ))}
     </HorizontalContainer>
 );
 
 class RoundBtnGroup extends React.Component {
     render() {
-        let btns = this.props.data.buttons;
         return (
-            <Buttons buttons={btns}/>
+            <Buttons buttons={this.props.data.buttons} links={this.props.data.links}/>
         );
     }
 }

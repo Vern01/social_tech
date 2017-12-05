@@ -24,7 +24,7 @@ let array = {
             "data": "",
             "children": [{
                 "name": "roundbtngroup",
-                "data": {"buttons": ["View Products", "Register as Maker/Designer"]}
+                "data": {"buttons": ["View Products", "Register as Maker/Designer"], "links": ["RegisterMakerDesigner", ""]}
             }]
         }]
     }, {

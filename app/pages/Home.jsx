@@ -29,10 +29,19 @@ let array = {
         }]
     }, {
         "name": "hdivider",
-        "data": {"style": "38%"}
+        "data": {"style": "38%"},
+        "children": [{
+            "name": "FeatureContainer",
+            "data": {"title": "Feature Design", "images": ["", "", "", ""]}
+        }]
     }, {
         "name": "hdivider",
-        "data": {"style": "17%"}
+        "data": {"style": "17%"},
+        "children": [{
+            "name": "icontextbox",
+            "data": {"images": ["", "", ""], "text": ["Choose your design and order",
+                "Review generated quotes", "Request from your preferred Maker"]}
+        }]
     }]
 };
 

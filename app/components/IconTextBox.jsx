@@ -8,7 +8,7 @@ let ImageText = ({images, text}) => (
     <BaselineContainer>
         {images.map((image, index) => (
             <div key={index} className="center-container">
-                <IconText image={image} text={text[index]}/>
+                <IconText data={{"image": image, "text": text[index]}}/>
             </div>
         ))}
     </BaselineContainer>

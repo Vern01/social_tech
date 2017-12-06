@@ -1,9 +1,10 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 class SwitchButton extends React.Component {
     render() {
         return (
-            <div className="switch-button">{this.props.data.text}</div>
+            <Link to={"/" + this.props.data.link} className="switch-button">{this.props.data.text}</Link>
         );
     }
 }

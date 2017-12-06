@@ -62,6 +62,7 @@ form {
     padding: calc(2.2 * var(--unit));
     margin: calc(1 * var(--unit));
     background-color: #FFFFFF;
+    text-align: center;
 }
 
 .len38 {
@@ -191,8 +192,8 @@ form {
 .form {
     width: calc(70 * var(--unit));
 }
-.form > * {
-    margin: 0 0  calc(1 * var(--unit));
+.form-input, .form-area, .form-label {
+    margin: 0 0 calc(1 * var(--unit));
 }
 .form-input, .form-area {
     width: 100%;
@@ -201,6 +202,9 @@ form {
 }
 .form-input {
     height: calc(4 * var(--unit));
+}
+.form-area {
+    resize: none;
 }
 
 .fill-container {
@@ -254,6 +258,17 @@ form {
 
 a {
     text-decoration: none;
+}
+
+button {
+    background: none !important;
+    color: inherit;
+    border: none;
+
+}
+
+input:focus, textarea:focus {
+    outline: none;
 }
 
 /*Remove tag defaults end*/

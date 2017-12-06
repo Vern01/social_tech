@@ -7,9 +7,7 @@ import RoundBtn from 'RoundBtn'
 let Buttons = ({buttons, links}) => (
     <HorizontalContainer>
         {buttons.map((button, index) => (
-            <Link key={index} to={"/" + links[index]}>
-                <RoundBtn data={{"text": button}}/>
-            </Link>
+            <RoundBtn key={index} data={{"text": button, "link": links[index]}}/>
         ))}
     </HorizontalContainer>
 );

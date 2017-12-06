@@ -24,14 +24,14 @@ let array = {
             "data": "",
             "children": [{
                 "name": "roundbtngroup",
-                "data": {"buttons": ["View Products", "Register as Maker/Designer"], "links": ["RegisterMakerDesigner", ""]}
+                "data": {"buttons": ["View Products", "Register as Maker/Designer"], "links": ["", "RegisterMakerDesigner"]}
             }]
         }]
     }, {
         "name": "hdivider",
         "data": {"style": "38%"},
         "children": [{
-            "name": "FeatureContainer",
+            "name": "FeatureGroup",
             "data": {"title": "Feature Design", "images": ["", "", "", ""]}
         }]
     }, {

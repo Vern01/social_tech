@@ -1,12 +1,16 @@
 import React from 'react'
 
-import BaslineContainer from 'BaselineContainer'
+import FormBuilder from 'FormBuilder'
+
+import BaselineContainer from 'BaselineContainer'
 import Body from 'Body'
 import CenterContainer from 'CenterContainer'
 import HDivider from 'HDivider'
 import HorizontalContainer from 'HorizontalContainer'
 
-import FeatureContainer from 'FeatureContainer'
+import FeatureGroup from 'app/components/FeatureGroup'
+import FormTextArea from 'FormTextArea'
+import FormTextInput from 'FormTextInput'
 import H1 from 'H1'
 import H2 from 'H2'
 import Header from 'Header'
@@ -22,8 +26,10 @@ import SwitchButtonGroup from 'SwitchButtonGroup'
 
 let factory = function (component) {
     switch (component.toLowerCase()) {
-        case "baslinecontainer":
-            return BaslineContainer;
+        case "formbuilder":
+            return FormBuilder;
+        case "baselinecontainer":
+            return BaselineContainer;
         case "body":
             return Body;
         case "centercontainer":
@@ -32,8 +38,12 @@ let factory = function (component) {
             return HDivider;
         case "horizontalcontainer":
             return HorizontalContainer;
-        case "featurecontainer":
-            return FeatureContainer;
+        case "featuregroup":
+            return FeatureGroup;
+        case "formtextarea":
+            return FormTextArea;
+        case "formtextinput":
+            return FormTextInput;
         case "h1":
             return H1;
         case "h2":

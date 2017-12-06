@@ -10,7 +10,7 @@ let array = {
         "data": {"styles": {height: "100%"}},
         "children": [{
             "name": "SwitchButtonGroup",
-            "data": {"buttons": ["Maker", "Designer"]}
+            "data": {"buttons": ["Maker", "Designer"], "links": ["", ""]}
         }, {
             "name": "h2",
             "data": {"text": "Register to become a Maker"}
@@ -37,6 +37,12 @@ let array = {
         }, {
             "name": "h2",
             "data": {"text": "Details:"}
+        }, {
+            "name": "FormBuilder",
+            "data": {
+                "types": ["TextInput", "TextInput", "TextArea"], "names": ["Name", "Email", "Description"],
+                "submitName": "Submit", "links": [], "linkNames": []
+            }
         }]
     }]
 };

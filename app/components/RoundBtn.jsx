@@ -1,11 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 class HorizontalContainer extends React.Component {
     render() {
         return (
-            <button className="round-btn full-border len38">
+            <Link to={"/" + this.props.data.link} className="round-btn full-border len38">
                 {this.props.data.text}
-            </button>
+            </Link>
         );
     }
 }

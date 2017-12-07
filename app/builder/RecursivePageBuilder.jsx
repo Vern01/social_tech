@@ -5,10 +5,13 @@ import FormBuilder from 'FormBuilder'
 import BaselineContainer from 'BaselineContainer'
 import Body from 'Body'
 import CenterContainer from 'CenterContainer'
+import Fill from 'Fill'
+import FillContainer from 'FillConctainer'
+import FillNone from 'FillNone'
 import HDivider from 'HDivider'
 import HorizontalContainer from 'HorizontalContainer'
 
-import FeatureGroup from 'app/components/FeatureGroup'
+import FeatureGroup from 'FeatureGroup'
 import FormTextArea from 'FormTextArea'
 import FormTextInput from 'FormTextInput'
 import H1 from 'H1'
@@ -34,6 +37,12 @@ let factory = function (component) {
             return Body;
         case "centercontainer":
             return CenterContainer;
+        case "fill":
+            return Fill;
+        case "fillcontainer":
+            return FillContainer;
+        case "fillnone":
+            return FillNone;
         case "hdivider":
             return HDivider;
         case "horizontalcontainer":

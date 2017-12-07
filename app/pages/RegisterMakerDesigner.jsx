@@ -7,7 +7,7 @@ let array = {
     "data": "",
     "children": [{
         "name": "centercontainer",
-        "data": {"styles": {height: "100%"}},
+        "data": {"styles": {minHeight: "100%"}},
         "children": [{
             "name": "SwitchButtonGroup",
             "data": {"buttons": ["Maker", "Designer"], "links": ["", ""]}
@@ -41,7 +41,7 @@ let array = {
             "name": "FormBuilder",
             "data": {
                 "types": ["TextInput", "TextInput", "TextArea"], "names": ["Name", "Email", "Description"],
-                "submitName": "Submit", "links": [], "linkNames": []
+                "submitName": "Submit", "links": ["MakerDashboard"], "linkNames": ["Dashboard-TestOnly"]
             }
         }]
     }]

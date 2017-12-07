@@ -20,9 +20,17 @@ let array = {
             children: [{
                 name:"FillNone",
                 data:"",
+                children: [{
+                    name:"VerticalMenu",
+                    data:{tabs: ["New", "Improved", "Decline"]}
+                }]
             }, {
                 name:"Fill",
-                data:""
+                data:"",
+                children:[{
+                    name:"ImageGroup",
+                    data:{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""]}
+                }]
             }]
         }]
     }]

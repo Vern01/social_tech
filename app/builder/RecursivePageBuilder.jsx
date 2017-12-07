@@ -19,6 +19,7 @@ import H2 from 'H2'
 import Header from 'Header'
 import IconText from 'IconText'
 import IconTextBox from 'IconTextBox'
+import ImageGroup from 'ImageGroup'
 import Intro from 'Intro'
 import P1 from "P1";
 import Paragraph from 'Paragraph'
@@ -26,6 +27,7 @@ import RoundBtn from 'RoundBtn'
 import RoundBtnGroup from 'RoundBtnGroup'
 import SwitchButton from 'SwitchButton'
 import SwitchButtonGroup from 'SwitchButtonGroup'
+import VerticalMenu from 'VerticalMenu'
 
 let factory = function (component) {
     switch (component.toLowerCase()) {
@@ -63,6 +65,8 @@ let factory = function (component) {
             return IconText;
         case "icontextbox":
             return IconTextBox;
+        case "imagegroup":
+            return ImageGroup;
         case "intro":
             return Intro;
         case "p1":
@@ -77,6 +81,8 @@ let factory = function (component) {
             return SwitchButton;
         case "switchbuttongroup":
             return SwitchButtonGroup;
+        case "verticalmenu":
+            return VerticalMenu;
         default:
             throw "Component does not exist => " + component;
     }

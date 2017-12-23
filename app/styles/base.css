@@ -89,7 +89,7 @@ form {
 
 /*Components*/
 
-.center-container, .horizontal-container {
+.center-container, .buttons-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -193,7 +193,7 @@ form {
     width: calc(70 * var(--unit));
 }
 .form-input, .form-area, .form-label {
-    margin: 0 0 calc(1 * var(--unit));
+    margin: 0 0  calc(1 * var(--unit));
 }
 .form-input, .form-area {
     width: 100%;
@@ -203,7 +203,7 @@ form {
 .form-input {
     height: calc(4 * var(--unit));
 }
-.form-area {
+.form-area, .input-area {
     resize: none;
 }
 
@@ -253,13 +253,29 @@ form {
     padding: calc(1 * var(--unit));
 }
 
+.label-input-container {
+    display: flex;
+    padding: calc(0.5 * var(--unit)) 0;
+}
+.input-label {
+    padding: 0 calc(3 * var(--unit));
+    width: calc(10 * var(--unit));
+}
+.input, .input-area {
+    flex: 1 0 auto;
+    margin-right: calc(6 * var(--unit));
+}
+.input-area {
+    height: calc(10 * var(--unit));
+}
+
+
 /*Custom Features end*/
 /*Remove tag defaults start*/
 
 a {
     text-decoration: none;
 }
-
 button {
     background: none !important;
     color: inherit;

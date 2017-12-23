@@ -1,15 +1,14 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 
-import HorizontalContainer from "HorizontalContainer";
+import ButtonsContainer from "ButtonsContainer";
 import RoundBtn from 'RoundBtn'
 
 let Buttons = ({buttons, links}) => (
-    <HorizontalContainer>
+    <ButtonsContainer>
         {buttons.map((button, index) => (
             <RoundBtn key={index} data={{"text": button, "link": links[index]}}/>
         ))}
-    </HorizontalContainer>
+    </ButtonsContainer>
 );
 
 class RoundBtnGroup extends React.Component {

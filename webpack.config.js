@@ -7,16 +7,19 @@ module.exports = {
 	resolve: {
 		modules: [__dirname, 'node_modules'],
 		alias: {
+			DesignFormBuilder: 'app/builder/DesignFormBuilder',
 			FormBuilder: 'app/builder/FormBuilder',
 			RecursivePageBuilder: 'app/builder/RecursivePageBuilder',
 			BaselineContainer: 'app/components/containers/BaselineContainer',
 			Body: 'app/components/containers/Body',
+			ButtonsContainer: 'app/components/containers/ButtonsContainer',
 			CenterContainer: 'app/components/containers/CenterContainer',
 			Fill: 'app/components/containers/Fill',
 			FillConctainer: 'app/components/containers/FillContainer',
 			FillNone: 'app/components/containers/FillNone',
             HDivider: 'app/components/containers/HDivider',
 			HorizontalContainer: 'app/components/containers/HorizontalContainer',
+			ModalContainer: 'app/components/containers/ModalContainer',
 			SwitchButtonContainer: 'app/components/containers/SwitchButtonContainer',
 			FeatureGroup: 'app/components/FeatureGroup',
 			FormSubmit: 'app/components/FormSubmit',
@@ -28,6 +31,9 @@ module.exports = {
 			IconText: 'app/components/IconText',
 			IconTextBox: 'app/components/IconTextBox',
 			ImageGroup: 'app/components/ImageGroup',
+			Input: 'app/components/Input',
+			InputArea: 'app/components/InputArea',
+			InputLabel:'app/components/InputLabel',
 			Intro: 'app/components/Intro',
 			P1: 'app/components/P1',
 			Paragraph: 'app/components/Paragraph',
@@ -40,6 +46,7 @@ module.exports = {
             Home: 'app/pages/Home',
 			MakerDashboard: 'app/pages/MakerDashboard',
 			RegisterMakerDesigner: 'app/pages/RegisterMakerDesigner',
+			Test: 'app/pages/Test',
 			BaseCss: 'app/styles/base'
 		},
 		extensions: ['.js', '.jsx', '.css']

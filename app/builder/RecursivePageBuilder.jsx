@@ -1,5 +1,6 @@
 import React from 'react'
 
+import DesignFormBuilder from "DesignFormBuilder";
 import FormBuilder from 'FormBuilder'
 
 import BaselineContainer from 'BaselineContainer'
@@ -10,6 +11,8 @@ import FillContainer from 'FillConctainer'
 import FillNone from 'FillNone'
 import HDivider from 'HDivider'
 import HorizontalContainer from 'HorizontalContainer'
+import ModalContainer from 'ModalContainer'
+import SwitchButtonContainer from 'SwitchButtonContainer'
 
 import FeatureGroup from 'FeatureGroup'
 import FormTextArea from 'FormTextArea'
@@ -31,6 +34,8 @@ import VerticalMenu from 'VerticalMenu'
 
 let factory = function (component) {
     switch (component.toLowerCase()) {
+        case "designformbuilder":
+            return DesignFormBuilder;
         case "formbuilder":
             return FormBuilder;
         case "baselinecontainer":
@@ -49,6 +54,10 @@ let factory = function (component) {
             return HDivider;
         case "horizontalcontainer":
             return HorizontalContainer;
+        case "modalcontainer":
+            return ModalContainer;
+        case "switchbuttoncontainer":
+            return SwitchButtonContainer;
         case "featuregroup":
             return FeatureGroup;
         case "formtextarea":

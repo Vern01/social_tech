@@ -11,6 +11,7 @@ import FillContainer from 'FillConctainer'
 import FillNone from 'FillNone'
 import HDivider from 'HDivider'
 import HorizontalContainer from 'HorizontalContainer'
+import ListContainer from 'ListContainer'
 import ModalContainer from 'ModalContainer'
 import SwitchButtonContainer from 'SwitchButtonContainer'
 
@@ -30,6 +31,8 @@ import RoundBtn from 'RoundBtn'
 import RoundBtnGroup from 'RoundBtnGroup'
 import SwitchButton from 'SwitchButton'
 import SwitchButtonGroup from 'SwitchButtonGroup'
+import TwoItem from 'TwoItem'
+import TwoListGroup from 'TwoListGroup'
 import VerticalMenu from 'VerticalMenu'
 
 let factory = function (component) {
@@ -54,6 +57,8 @@ let factory = function (component) {
             return HDivider;
         case "horizontalcontainer":
             return HorizontalContainer;
+        case "ListContainer":
+            return ListContainer;
         case "modalcontainer":
             return ModalContainer;
         case "switchbuttoncontainer":
@@ -90,6 +95,10 @@ let factory = function (component) {
             return SwitchButton;
         case "switchbuttongroup":
             return SwitchButtonGroup;
+        case "twoitem":
+            return TwoItem;
+        case "twolistgroup":
+            return TwoListGroup;
         case "verticalmenu":
             return VerticalMenu;
         default:

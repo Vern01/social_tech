@@ -13,7 +13,7 @@ let array = {
             data:{text: "Maker Dashboard"}
         }, {
             name:"SwitchButtonGroup",
-            data:{buttons: ["Account Info", "Designs", "Orders"], links: ["", "", ""]}
+            data:{buttons: ["Account Info", "Designs", "Orders"], links: ["", "", "Dashboard"]}
         }, {
             name:"FillContainer",
             data:"",

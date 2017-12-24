@@ -4,6 +4,7 @@ import {HashRouter, Route} from 'react-router-dom'
 
 import Header from 'Header'
 import About from 'About'
+import Dashboard from "Dashboard"
 import Home from 'Home'
 import MakerDashboard from 'MakerDashboard'
 import RegisterMakerDesigner from 'RegisterMakerDesigner'
@@ -19,6 +20,7 @@ ReactDOM.render((
                 <Route path="/about" component={About}/>
                 <Route path="/RegisterMakerDesigner" component={RegisterMakerDesigner}/>
                 <Route path="/MakerDashboard" component={MakerDashboard}/>
+                <Route path="/Dashboard" component={Dashboard}/>
                 <Route path="/Test" component={Test}/>
                 <div className="footer divider-border" />
             </div>

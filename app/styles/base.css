@@ -269,6 +269,28 @@ form {
     height: calc(10 * var(--unit));
 }
 
+.list-container {
+    width: calc(75 * var(--unit));
+    height: calc(30 * var(--unit));
+    overflow-x: auto;
+}
+.two-item:first-child {
+    border-top: calc(0.1 * var(--unit)) solid #B5C0CC;
+;
+}
+.two-item {
+    width: 100%;
+    border-bottom: calc(0.1 * var(--unit)) solid #B5C0CC;
+    float: left;
+    padding: calc(2 * var(--unit)) 0;
+}
+.left-text {
+    float: left;
+}
+.right-text {
+    float: right;
+    font-size: calc(1.7 * var(--unit));
+}
 
 /*Custom Features end*/
 /*Remove tag defaults start*/

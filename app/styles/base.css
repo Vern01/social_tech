@@ -270,13 +270,12 @@ form {
 }
 
 .list-container {
-    width: calc(75 * var(--unit));
+    width: 100%;
     height: calc(30 * var(--unit));
     overflow-x: auto;
 }
 .two-item:first-child {
     border-top: calc(0.1 * var(--unit)) solid #B5C0CC;
-;
 }
 .two-item {
     width: 100%;
@@ -290,6 +289,46 @@ form {
 .right-text {
     float: right;
     font-size: calc(1.7 * var(--unit));
+}
+
+.search-container {
+
+}
+.search-title {
+    padding: calc(0.5 * var(--unit));
+}
+.search-bar {
+    border-radius: calc(2.5 * var(--unit));
+    padding: calc(0.5 * var(--unit)) calc(2.5 * var(--unit));
+}
+
+.design-item {
+    display: flex;
+    padding: calc(1 * var(--unit)) calc(2 * var(--unit));
+    border-bottom: calc(0.1 * var(--unit)) solid #B5C0CC;
+}
+.design-item:first-child {
+    border-top: calc(0.1 * var(--unit)) solid #B5C0CC;
+}
+.design-image {
+    height: calc(5 * var(--unit));
+    width: calc(5 * var(--unit));
+    margin-right: calc(2 * var(--unit));
+}
+.design-title {
+    width: calc(18 * var(--unit));
+}
+.design-star-container {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+.design-star {
+    width: calc(4 * var(--unit));
+    padding: 0 calc(0.5 * var(--unit));
+}
+.design-amount, .design-title {
+    line-height: calc(5 * var(--unit));
 }
 
 /*Custom Features end*/
@@ -307,6 +346,9 @@ button {
 
 input:focus, textarea:focus {
     outline: none;
+}
+input , textarea{
+    border: calc(0.2 * var(--unit)) solid #A3A9B0;
 }
 
 /*Remove tag defaults end*/

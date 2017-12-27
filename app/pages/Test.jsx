@@ -44,6 +44,9 @@ let array = {
                 "name": "p1",
                 "data": {text: "Please specify how you would like the design to be customized."}
             }, {
+              name: "SearchBar",
+              data: {title: "Search"},
+            }, {
                 "name": "DesignFormBuilder",
                 "data": {
                     "types": ["Input", "Input", "Input", "InputArea"], "names": ["Length:", "Width:", "Height:", "Other:"],

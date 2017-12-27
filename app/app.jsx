@@ -7,6 +7,7 @@ import About from 'About'
 import Dashboard from "Dashboard"
 import Home from 'Home'
 import MakerDashboard from 'MakerDashboard'
+import PickMaker from 'PickMaker'
 import RegisterMakerDesigner from 'RegisterMakerDesigner'
 import Test from 'Test'
 
@@ -22,7 +23,8 @@ ReactDOM.render((
                 <Route path="/MakerDashboard" component={MakerDashboard}/>
                 <Route path="/Dashboard" component={Dashboard}/>
                 <Route path="/Test" component={Test}/>
-                <div className="footer divider-border" />
+                <Route path="/PickMaker" component={PickMaker}/>
+                <div className="footer divider-border"/>
             </div>
         </HashRouter>
     ),

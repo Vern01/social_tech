@@ -10,7 +10,7 @@ let array = {
         "data": {"styles": {minHeight: "100%"}},
         "children": [{
             "name": "SwitchButtonGroup",
-            "data": {"buttons": ["Maker", "Designer"], "links": ["", ""]}
+            "data": {"buttons": ["Maker", "Designer"], "links": ["PickMaker", ""]}
         }, {
             "name": "h2",
             "data": {"text": "Register to become a Maker"}

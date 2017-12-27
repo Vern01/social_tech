@@ -15,6 +15,8 @@ import ListContainer from 'ListContainer'
 import ModalContainer from 'ModalContainer'
 import SwitchButtonContainer from 'SwitchButtonContainer'
 
+import DesignItem from 'DesignItem'
+import DesignListGroup from 'DesignListGroup'
 import FeatureGroup from 'FeatureGroup'
 import FormTextArea from 'FormTextArea'
 import FormTextInput from 'FormTextInput'
@@ -29,6 +31,7 @@ import P1 from "P1";
 import Paragraph from 'Paragraph'
 import RoundBtn from 'RoundBtn'
 import RoundBtnGroup from 'RoundBtnGroup'
+import SearchBar from 'SearchBar'
 import SwitchButton from 'SwitchButton'
 import SwitchButtonGroup from 'SwitchButtonGroup'
 import TwoItem from 'TwoItem'
@@ -57,12 +60,16 @@ let factory = function (component) {
             return HDivider;
         case "horizontalcontainer":
             return HorizontalContainer;
-        case "ListContainer":
+        case "listcontainer":
             return ListContainer;
         case "modalcontainer":
             return ModalContainer;
         case "switchbuttoncontainer":
             return SwitchButtonContainer;
+        case "designitem":
+            return DesignItem;
+        case "designlistgroup":
+            return DesignListGroup;
         case "featuregroup":
             return FeatureGroup;
         case "formtextarea":
@@ -91,6 +98,8 @@ let factory = function (component) {
             return RoundBtn;
         case "roundbtngroup":
             return RoundBtnGroup;
+        case "searchbar":
+            return SearchBar;
         case "switchbutton":
             return SwitchButton;
         case "switchbuttongroup":

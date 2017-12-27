@@ -1,12 +1,12 @@
 {
-  "name": "boilerplate",
+  "name": "MakeCo",
   "version": "1.0.0",
-  "description": "Simple react app",
+  "description": "Recursive page building Application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Andrew Mead",
+  "author": "MakeCo",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -16,6 +16,7 @@
     "morgan": "^1.9.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2",
     "webpack-dev-server": "^2.9.4"
   },
   "devDependencies": {
@@ -24,6 +25,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "webpack": "^3.6.0"
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.10.0"
   }
 }

@@ -1,0 +1,26 @@
+<Body>
+<HDivider style={{minHeight: "45%"}}>
+    <CenterContainer>
+        <div>
+            <H1>Bringing People and Makers together.</H1>
+            <Paragraph>
+                We are changing the way that you go at getting what you need
+                by connecting customers to makers who have the skill and tools
+                to create what you need.
+            </Paragraph>
+        </div>
+    </CenterContainer>
+    <CenterContainer>
+        <HorizontalContainer>
+            <RoundBtn>View Products</RoundBtn>
+            <RoundBtn>Register as Maker/Designer</RoundBtn>
+        </HorizontalContainer>
+    </CenterContainer>
+</HDivider>
+<HDivider style={{minHeight: "38%"}}>
+    <FeatureContainer title={"Feature Designs"} images={["", "", "", ""]}/>
+</HDivider>
+<HDivider style={{minHeight: "17%"}}>
+    <IconTextBox images={["", "", ""]} text={["Choose your design and order", "Review generated quotes", "Request from your preferred Maker"]}/>
+</HDivider>
+</Body>

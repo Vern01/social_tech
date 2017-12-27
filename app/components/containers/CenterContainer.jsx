@@ -10,4 +10,8 @@ class CenterContainer extends React.Component {
     }
 }
 
+CenterContainer.defaultProps = {
+    data: {styles: {}}
+};
+
 export default CenterContainer;

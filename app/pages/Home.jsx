@@ -1,6 +1,5 @@
 import React from 'react';
 
-import RecursivePageBuilder from 'RecursivePageBuilder'
 import Body from "Body";
 import HDivider from "HDivider";
 import CenterContainer from "CenterContainer";

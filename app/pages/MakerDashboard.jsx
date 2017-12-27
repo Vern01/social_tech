@@ -1,45 +1,66 @@
 import React from 'react'
 
-import RecursivePageBuilder from 'RecursivePageBuilder'
+import Body from "Body";
+import CenterContainer from "CenterContainer";
+import H1 from "H1";
+import SwitchButtonGroup from "SwitchButtonGroup";
+import FillContainer from "FillConctainer";
+import FillNone from "FillNone";
+import Fill from "Fill";
+import VerticalMenu from "VerticalMenu";
+import ImageGroup from "ImageGroup";
 
-let array = {
-    name:"body",
-    data:"",
-    children: [{
-        name: "CenterContainer",
-        data:"",
-        children: [{
-            name:"H1",
-            data:{text: "Maker Dashboard"}
-        }, {
-            name:"SwitchButtonGroup",
-            data:{buttons: ["Account Info", "Designs", "Orders"], links: ["", "", "Dashboard"]}
-        }, {
-            name:"FillContainer",
-            data:"",
-            children: [{
-                name:"FillNone",
-                data:"",
-                children: [{
-                    name:"VerticalMenu",
-                    data:{tabs: ["New", "Improved", "Decline"]}
-                }]
-            }, {
-                name:"Fill",
-                data:"",
-                children:[{
-                    name:"ImageGroup",
-                    data:{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""]}
-                }]
-            }]
-        }]
-    }]
-};
+// let array = {
+//     name:"body",
+//     data:"",
+//     children: [{
+//         name: "CenterContainer",
+//         data:"",
+//         children: [{
+//             name:"H1",
+//             data:{text: "Maker Dashboard"}
+//         }, {
+//             name:"SwitchButtonGroup",
+//             data:{buttons: ["Account Info", "Designs", "Orders"], links: ["", "", "Dashboard"]}
+//         }, {
+//             name:"FillContainer",
+//             data:"",
+//             children: [{
+//                 name:"FillNone",
+//                 data:"",
+//                 children: [{
+//                     name:"VerticalMenu",
+//                     data:{tabs: ["New", "Improved", "Decline"]}
+//                 }]
+//             }, {
+//                 name:"Fill",
+//                 data:"",
+//                 children:[{
+//                     name:"ImageGroup",
+//                     data:{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""]}
+//                 }]
+//             }]
+//         }]
+//     }]
+// };
 
 class MakerDashboard extends React.Component {
     render() {
         return (
-            <RecursivePageBuilder root={array} />
+            <Body>
+            <CenterContainer>
+                <H1 data={{text: "Maker Dashboard"}}/>
+                <SwitchButtonGroup data={{buttons: ["Account Info", "Designs", "Orders"], links: ["", "", "Dashboard"]}}/>
+                <FillContainer>
+                    <FillNone>
+                        <VerticalMenu data={{tabs: ["New", "Improved", "Decline"]}}/>
+                    </FillNone>
+                    <Fill>
+                        <ImageGroup data={{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""]}}/>
+                    </Fill>
+                </FillContainer>
+            </CenterContainer>
+            </Body>
         );
     }
 }

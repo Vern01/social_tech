@@ -1,30 +1,40 @@
 import React from 'react'
 
-import RecursivePageBuilder from 'RecursivePageBuilder'
+import Body from "Body";
+import CenterContainer from "CenterContainer";
+import H1 from 'H1'
+import SwitchButtonGroup from "SwitchButtonGroup";
+import TwoListGroup from "TwoListGroup";
 
-let array = {
-    name: "body",
-    data: "",
-    children: [{
-        name: "CenterContainer",
-        data: {styles: {minHeight: "100%"}},
-        children: [{
-            name: "h1",
-            data: {text: "My Dashboard"}
-        }, {
-            name: "SwitchButtonGroup",
-            data: {buttons: ["My Account Info", "Previous Orders", "Active Orders"], links: ["", "", ""]}
-        }, {
-            name: "TwoListGroup",
-            data: {left: ["Lego Piece", "Chair", "Lorem", "Ipsum", "Tabel"], right: ["View Order", "View Order", "View Order", "View Order", "View Order"]}
-        }]
-    }]
-};
+// let array = {
+//     name: "body",
+//     data: "",
+//     children: [{
+//         name: "CenterContainer",
+//         data: {styles: {minHeight: "100%"}},
+//         children: [{
+//             name: "h1",
+//             data: {text: "My Dashboard"}
+//         }, {
+//             name: "SwitchButtonGroup",
+//             data: {buttons: ["My Account Info", "Previous Orders", "Active Orders"], links: ["", "", ""]}
+//         }, {
+//             name: "TwoListGroup",
+//             data: {left: ["Lego Piece", "Chair", "Lorem", "Ipsum", "Tabel"], right: ["View Order", "View Order", "View Order", "View Order", "View Order"]}
+//         }]
+//     }]
+// };
 
 class Dashboard extends React.Component {
     render() {
         return (
-          <RecursivePageBuilder root={array}/>
+            <Body>
+            <CenterContainer data={{styles: {minHeight: "100%"}}}>
+                <H1 data={{text: "My Dashboard"}}/>
+                <SwitchButtonGroup data={{buttons: ["My Account Info", "Previous Orders", "Active Orders"], links: ["", "", ""]}}/>
+                <TwoListGroup data={{left: ["Lego Piece", "Chair", "Lorem", "Ipsum", "Tabel"], right: ["View Order", "View Order", "View Order", "View Order", "View Order"]}}/>
+            </CenterContainer>
+            </Body>
         );
     }
 }

@@ -8,8 +8,8 @@ class DesignItem extends React.Component {
                 <img src={this.props.data.image} alt="" className="design-image"/>
                 <div className="design-title">{this.props.data.title}</div>
                 <div className="design-star-container">
-                    {stars.map(() => (
-                        <img src="" alt="" className="design-star"/>
+                    {stars.map((star, index) => (
+                        <img key={index} src="" alt="" className="design-star"/>
                     ))}
                 </div>
                 <div className="design-amount">{this.props.data.amount}</div>

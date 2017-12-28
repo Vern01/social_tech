@@ -2,6 +2,7 @@ import React from 'react'
 
 import SwitchButtonContainer from 'SwitchButtonContainer'
 
+import FormPasswordInput from 'FormPasswordInput'
 import FormSubmit from 'FormSubmit'
 import FormTextInput from 'FormTextInput'
 import FormTextArea from 'FormTextArea'
@@ -13,6 +14,8 @@ let formFactory = function (type) {
            return FormTextInput;
         case "textarea":
             return FormTextArea;
+        case "passwordinput":
+            return FormPasswordInput;
         default:
             throw "Form Component does not exist: " + type;
     }

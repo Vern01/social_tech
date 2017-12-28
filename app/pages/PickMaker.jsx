@@ -37,11 +37,9 @@ class PickMaker extends React.Component {
         return (
             <Body>
             <CenterContainer data={{styles: {minHeight: "100%"}}}>
-                <ModalContainer>
-                    <H2 data={{text: "Select a Maker to create your selected design."}}/>
-                    <P1 data={{text:"Select a maker from the list of live quotes below."}}/>
-                    <DesignListGroup data={{images: ["icons/gallery.png", "icons/gallery.png"], titles: ["Maker 1", "Maker 2"], counts: [2, 4], amounts: ["R200", "R250"]}}/>
-                </ModalContainer>
+                <H2 data={{text: "Select a Maker to create your selected design."}}/>
+                <P1 data={{text:"Select a maker from the list of live quotes below."}}/>
+                <DesignListGroup data={{images: ["icons/gallery.png", "icons/gallery.png"], titles: ["Maker 1", "Maker 2"], counts: [2, 4], amounts: ["R200", "R250"]}}/>
             </CenterContainer>
             </Body>
         );

@@ -270,7 +270,7 @@ form {
 }
 
 .list-container {
-    width: 100%;
+    width: calc(75 * var(--unit));
     height: calc(30 * var(--unit));
     overflow-x: auto;
 }

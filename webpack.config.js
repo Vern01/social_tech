@@ -38,6 +38,7 @@ module.exports = {
 			InputArea: 'app/components/InputArea',
 			InputLabel:'app/components/InputLabel',
 			Intro: 'app/components/Intro',
+			LargeImage: 'app/components/LargeImage',
 			P1: 'app/components/P1',
 			Paragraph: 'app/components/Paragraph',
 			RoundBtn: 'app/components/RoundBtn',
@@ -53,6 +54,7 @@ module.exports = {
             Home: 'app/pages/Home',
 			MakerDashboard: 'app/pages/MakerDashboard',
 			PickMaker: 'app/pages/PickMaker',
+			ProductView: 'app/pages/ProductView',
 			RegisterMakerDesigner: 'app/pages/RegisterMakerDesigner',
 			Test: 'app/pages/Test',
 			BaseCss: 'app/styles/base'

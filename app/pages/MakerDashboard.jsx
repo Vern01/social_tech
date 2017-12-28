@@ -56,7 +56,7 @@ class MakerDashboard extends React.Component {
                         <VerticalMenu data={{tabs: ["New", "Improved", "Decline"]}}/>
                     </FillNone>
                     <Fill>
-                        <ImageGroup data={{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""]}}/>
+                        <ImageGroup data={{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""], links: ["ProductView"]}}/>
                     </Fill>
                 </FillContainer>
             </CenterContainer>

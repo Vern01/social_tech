@@ -27,6 +27,7 @@ import IconText from 'IconText'
 import IconTextBox from 'IconTextBox'
 import ImageGroup from 'ImageGroup'
 import Intro from 'Intro'
+import LargeImage from 'LargeImage'
 import P1 from "P1";
 import Paragraph from 'Paragraph'
 import RoundBtn from 'RoundBtn'
@@ -90,6 +91,8 @@ let factory = function (component) {
             return ImageGroup;
         case "intro":
             return Intro;
+        case "largeimage":
+            return LargeImage;
         case "p1":
             return P1;
         case "paragraph":

@@ -1,6 +1,14 @@
 import React from 'react'
 
-import RecursivePageBuilder from 'RecursivePageBuilder'
+import Body from "Body";
+import CenterContainer from "CenterContainer";
+import FillContainer from "FillConctainer";
+import FillNone from "FillNone";
+import Fill from "Fill";
+import LargeImage from "LargeImage";
+import H1 from "H1";
+import SwitchButtonGroup from "SwitchButtonGroup";
+import Paragraph from "Paragraph";
 
 // let array = {
 //     name: "body",
@@ -13,7 +21,27 @@ import RecursivePageBuilder from 'RecursivePageBuilder'
 class ProductView extends React.Component {
     render() {
         return (
-            <RecursivePageBuilder root={array}/>
+            <Body>
+            <CenterContainer data={{styles: {minHeight: "100%"}}}>
+                <FillContainer>
+                    <FillNone>
+                        <CenterContainer>
+                            <LargeImage data={{image: ""}}/>
+                        </CenterContainer>
+                    </FillNone>
+                    <Fill>
+                        <H1 data={{text: "Table"}}/>
+                        <Paragraph data={{text: "Description <br> Text more text and you know the story <br> Length: 1800mm <br> Width: 1800mm <br> Height: 1200mm"}}/>
+                        <Paragraph data={{text: "Design Cost: R42"}}/>
+                        <CenterContainer>
+                            <SwitchButtonGroup data={{buttons: ["Customize", "Request Quotes"], links: ["", ""]}}/>
+                        </CenterContainer>
+                    </Fill>
+                </FillContainer>
+            </CenterContainer>
+            </Body>
         );
     }
 }
+
+export default ProductView;

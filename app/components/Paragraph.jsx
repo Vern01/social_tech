@@ -1,11 +1,18 @@
 import React from 'react'
 
+let Paragraphs = ({texts}) => (
+    <div className="p">
+        {texts.map((text, index) => (
+            <div>{text}</div>
+        ))}
+    </div>
+);
+
 class Paragraph extends React.Component {
     render() {
+        let str = this.props.data.text.split('<br>');
         return (
-            <div className="p">
-                {this.props.data.text}
-            </div>
+            <Paragraphs texts={str}/>
         );
     }
 }

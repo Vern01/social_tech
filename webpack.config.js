@@ -22,6 +22,7 @@ module.exports = {
 			ListContainer: 'app/components/containers/ListContainer',
 			ModalContainer: 'app/components/containers/ModalContainer',
 			SwitchButtonContainer: 'app/components/containers/SwitchButtonContainer',
+			ApiContainer: 'app/components/ApiContainer',
 			DesignItem: 'app/components/DesignItem',
 			DesignListGroup: 'app/components/DesignListGroup',
 			FeatureGroup: 'app/components/FeatureGroup',

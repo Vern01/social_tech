@@ -331,6 +331,22 @@ form {
     line-height: calc(5 * var(--unit));
 }
 
+.api-container {
+    display: flex;
+    width: calc(75 * var(--unit));
+}
+.api-box {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+.api-image {
+    width: calc(6 * var(--unit));
+    height: calc(6 * var(--unit));
+    border-radius: 50%;
+    box-shadow: 0 0 calc(1 * var(--unit)) #A3A9B0;
+}
+
 /*Custom Features end*/
 /*Remove tag defaults start*/
 

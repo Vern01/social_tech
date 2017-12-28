@@ -7,6 +7,7 @@ class Header extends React.Component {
             <div className="header divider-border">
                 <NavLink exact to='/' activeStyle={{fontWeight: 'bold'}} className="nav-btn">MakeCo</NavLink>
                 <NavLink to='/about' activeStyle={{fontWeight: 'bold'}} className="nav-btn">About</NavLink>
+                <NavLink to='/Login' activeStyle={{fontWeight: 'bold'}} className="nav-btn">Login</NavLink>
             </div>
         );
     }

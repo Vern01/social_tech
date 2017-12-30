@@ -38,5 +38,5 @@ ReactDOM.render((
             </div>
         </HashRouter>
     ),
-  document.getElementById('app')
+    document.getElementById('app')
 );

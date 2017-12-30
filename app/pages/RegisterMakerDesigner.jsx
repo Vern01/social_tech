@@ -63,7 +63,7 @@ class RegisterMakerDesigner extends React.Component {
                 <P1 data={{"text": "This is some text, for test purposes. The paragraph needs to be long ish, so type type type. da da something longer."}}/>
                 <P1 data={{"text": "This is some text, for test purposes. The paragraph needs to be long ish, so type type type. da da something longer. And some more texts da boom."}}/>
                 <H2 data={{"text": "Details:"}}/>
-                <FormBuilder data={{"types": ["TextInput", "TextInput", "TextArea"], "names": ["Name", "Email", "Description"], "submitName": "Submit", "links": ["MakerDashboard"], "linkNames": ["Dashboard-TestOnly"]}}/>
+                <FormBuilder data={{"types": ["TextInput", "TextInput", "TextArea"], "names": ["Name", "Email", "Description"], "submitName": "Submit", "links": [], "linkNames": []}}/>
             </CenterContainer>
             </Body>
         );

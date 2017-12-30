@@ -57,7 +57,7 @@ class RegisterMakerDesigner extends React.Component {
         return (
             <Body>
             <CenterContainer data={{"styles": {minHeight: "100%"}}}>
-                <SwitchButtonGroup data={{"buttons": ["Maker", "Designer"], "links": ["PickMaker", ""]}}/>
+                <SwitchButtonGroup data={{"buttons": ["Maker", "Designer"], "links": ["PickMaker", "DesignerDashboard"]}}/>
                 <H2 data={{"text": "Register to become a Maker"}}/>
                 <P1 data={{"text": "This is some text, for test purposes. The paragraph needs to be long ish, so type type type. da da something longer. And some more texts da boom ba da pa."}}/>
                 <P1 data={{"text": "This is some text, for test purposes. The paragraph needs to be long ish, so type type type. da da something longer."}}/>

@@ -12,6 +12,9 @@ import PickMaker from 'PickMaker'
 import ProductView from 'ProductView'
 import RegisterMakerDesigner from 'RegisterMakerDesigner'
 import Test from 'Test'
+import DesignerDashboard from 'DesignerDashboard'
+import NewDesign from "NewDesign";
+import Search from 'Search'
 
 import 'style-loader!css-loader!BaseCss'
 
@@ -28,6 +31,9 @@ ReactDOM.render((
                 <Route path="/PickMaker" component={PickMaker}/>
                 <Route path="/ProductView" component={ProductView}/>
                 <Route path="/Login" component={CustomerLogin}/>
+                <Route path="/DesignerDashboard" component={DesignerDashboard}/>
+                <Route path="/NewDesign" component={NewDesign}/>
+                <Route path="/Search" component={Search}/>
                 <div className="footer divider-border"/>
             </div>
         </HashRouter>

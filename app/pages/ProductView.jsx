@@ -2,7 +2,7 @@ import React from 'react'
 
 import Body from "Body";
 import CenterContainer from "CenterContainer";
-import FillContainer from "FillConctainer";
+import FillContainer from "FillContainer";
 import FillNone from "FillNone";
 import Fill from "Fill";
 import LargeImage from "LargeImage";

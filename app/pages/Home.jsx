@@ -60,7 +60,7 @@ class Home extends React.Component {
                     <Intro data={{"title": "Bringing People and Makers together.", "text": "We are changing the way that you go at getting what you need by connecting customers to makers who have the skill and tools to create what you need."}}/>
                 </CenterContainer>
                 <CenterContainer>
-                    <RoundBtnGroup data={{"buttons": ["View Products", "Register as Maker/Designer"], "links": ["Test", "RegisterMakerDesigner"]}}/>
+                    <RoundBtnGroup data={{"buttons": ["View Products", "Register as Maker/Designer"], "links": ["Search", "RegisterMakerDesigner"]}}/>
                 </CenterContainer>
             </HDivider>
             <HDivider data={{"style": "38%"}}>

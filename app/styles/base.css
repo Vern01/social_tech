@@ -18,9 +18,9 @@ form {
 
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 500px) {
     :root {
-        --unit: (550px / 75);
+        --unit: (500px / 75);
     }
 }
 
@@ -219,7 +219,7 @@ form {
     min-width: calc(10 * var(--unit));
 }
 .vertical-tab {
-    padding: calc(0.5 * var(--unit)) calc(1 * var(--unit));
+    padding: calc(1 * var(--unit)) calc(1 * var(--unit));
 }
 
 .image-container {
@@ -230,6 +230,7 @@ form {
 }
 .image-group {
     max-height: 100%;
+    max-width: calc(60 * var(--unit));  
     overflow: auto;
 }
 

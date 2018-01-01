@@ -31,9 +31,9 @@ module.exports = {
 			Test: 'app/pages/Test',
 			BaseCss: 'app/styles/base',
 			//Redux:
-			reducers: 'app/reducers/reducers.jsx',
-			actions: 'app/actions/actions.jsx',
-			configureStore: 'app/store/configureStore.jsx'
+			reducers: 'app/reducers/reducers',
+			actions: 'app/actions/actions',
+			configureStore: 'app/store/configureStore'
 		},
 		extensions: ['.js', '.jsx', '.css']
 	},

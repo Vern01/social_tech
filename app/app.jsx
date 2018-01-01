@@ -1,7 +1,10 @@
+//Packages
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {HashRouter, Route} from 'react-router-dom'
+import {Provider} from 'react-redux';
 
+//Pages
 import Header from 'Header'
 import About from 'About'
 import CustomerLogin from 'CustomerLogin'
@@ -16,9 +19,14 @@ import DesignerDashboard from 'DesignerDashboard'
 import NewDesign from "NewDesign";
 import Search from 'Search'
 
+//Redux
+var store = require('configureStore').configure();
+
+//Styles
 import 'style-loader!css-loader!BaseCss'
 
 ReactDOM.render((
+      <Provider store={store}>
         <HashRouter>
             <div>
                <Header/>
@@ -37,6 +45,7 @@ ReactDOM.render((
                 <div className="footer divider-border"/>
             </div>
         </HashRouter>
+      </Provider>
     ),
   document.getElementById('app')
 );

@@ -34,7 +34,7 @@ class ProductView extends React.Component {
                         <Paragraph data={{text: "Description <br> Text more text and you know the story <br> Length: 1800mm <br> Width: 1800mm <br> Height: 1200mm"}}/>
                         <Paragraph data={{text: "Design Cost: R42"}}/>
                         <CenterContainer>
-                            <SwitchButtonGroup data={{buttons: ["Customize", "Request Quotes"], links: ["", ""]}}/>
+                            <SwitchButtonGroup data={{buttons: ["Customize", "Request Quotes"], links: ["Customize", "PickMaker"]}}/>
                         </CenterContainer>
                     </Fill>
                 </FillContainer>

@@ -52,16 +52,15 @@ import FormBuilder from "FormBuilder";
 //     }]
 // };
 
-class RegisterMakerDesigner extends React.Component {
+class RegisterMaker extends React.Component {
     render() {
         return (
             <Body>
             <CenterContainer data={{"styles": {minHeight: "100%"}}}>
-                <SwitchButtonGroup data={{"buttons": ["Maker", "Designer"], "links": ["PickMaker", "DesignerDashboard"]}}/>
+                <SwitchButtonGroup data={{"buttons": ["Maker", "Designer"], "links": ["RegisterMaker", "RegisterDesigner"]}}/>
                 <H2 data={{"text": "Register to become a Maker"}}/>
-                <P1 data={{"text": "This is some text, for test purposes. The paragraph needs to be long ish, so type type type. da da something longer. And some more texts da boom ba da pa."}}/>
-                <P1 data={{"text": "This is some text, for test purposes. The paragraph needs to be long ish, so type type type. da da something longer."}}/>
-                <P1 data={{"text": "This is some text, for test purposes. The paragraph needs to be long ish, so type type type. da da something longer. And some more texts da boom."}}/>
+                <P1 data={{"text": "Makers are a big part of this platform. They make the designs of our designers as requested by people who want the design."}}/>
+                <P1 data={{"text": "If you are proud and passionate about your craftsmanship as a Maker then join this revolutionary platform and make a income out of your passion."}}/>
                 <H2 data={{"text": "Details:"}}/>
                 <FormBuilder data={{"types": ["TextInput", "TextInput", "TextArea"], "names": ["Name", "Email", "Description"], "submitName": "Submit", "links": [], "linkNames": []}}/>
             </CenterContainer>
@@ -70,4 +69,4 @@ class RegisterMakerDesigner extends React.Component {
     }
 }
 
-export default RegisterMakerDesigner;
+export default RegisterMaker;

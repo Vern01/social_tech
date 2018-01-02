@@ -6,14 +6,14 @@ import P1 from "P1";
 import FormBuilder from "FormBuilder";
 import ApiContainer from "ApiContainer"
 
-class CustomerLogin extends React.Component {
+class CustomerRegister extends React.Component {
     render() {
         return (
             <Body>
             <CenterContainer data={{styles: {minHeight: "100%"}}}>
-                <H1 data={{text: "Login"}}/>
-                <P1 data={{text: "Please login or register if you are new."}}/>
-                <FormBuilder data={{"types": ["TextInput", "PasswordInput"], "names": ["Email", "Password"], "submitName": "Submit", "links": ["Register"], "linkNames": ["Register"]}}/>
+                <H1 data={{text: "Register"}}/>
+                <P1 data={{text: "Please register to create an account."}}/>
+                <FormBuilder data={{"types": ["TextInput", "PasswordInput", "PasswordInput"], "names": ["Email", "Password", "Retype Password"], "submitName": "Submit", "links": ["Login"], "linkNames": ["Login"]}}/>
                 <ApiContainer/>
             </CenterContainer>
             </Body>
@@ -21,4 +21,4 @@ class CustomerLogin extends React.Component {
     }
 }
 
-export default CustomerLogin;
+export default CustomerRegister;

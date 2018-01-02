@@ -53,6 +53,8 @@ module.exports = {
 			VerticalMenu: 'app/components/VerticalMenu',
             About: 'app/pages/About',
 			CustomerLogin: 'app/pages/CustomerLogin',
+			CustomerRegister: 'app/pages/CustomerRegister',
+            Customize: 'app/pages/Customize',
 			Dashboard: 'app/pages/Dashboard',
 			DesignerDashboard: 'app/pages/DesignerDashboard',
             Home: 'app/pages/Home',
@@ -60,7 +62,8 @@ module.exports = {
 			NewDesign: 'app/pages/NewDesign',
 			PickMaker: 'app/pages/PickMaker',
 			ProductView: 'app/pages/ProductView',
-			RegisterMakerDesigner: 'app/pages/RegisterMakerDesigner',
+			RegisterDesigner: 'app/pages/RegisterDesigner',
+			RegisterMaker: 'app/pages/RegisterMaker',
 			Search:'app/pages/Search',
 			Test: 'app/pages/Test',
 			BaseCss: 'app/styles/base'

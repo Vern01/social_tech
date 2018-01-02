@@ -5,7 +5,7 @@ import HDivider from "HDivider";
 import CenterContainer from "CenterContainer";
 import Intro from "Intro";
 import RoundBtnGroup from "RoundBtnGroup";
-import FeatureContainer from "FeatureGroup";
+import FeatureGroup from "FeatureGroup";
 import IconTextBox from "IconTextBox";
 
 // let array = {
@@ -30,7 +30,7 @@ import IconTextBox from "IconTextBox";
 //             "data": "",
 //             "children": [{
 //                 "name": "roundbtngroup",
-//                 "data": {"buttons": ["View Products", "Register as Maker/Designer"], "links": ["Test", "RegisterMakerDesigner"]}
+//                 "data": {"buttons": ["View Products", "Register as Maker/Designer"], "links": ["Test", "RegisterMaker"]}
 //             }]
 //         }]
 //     }, {
@@ -60,11 +60,11 @@ class Home extends React.Component {
                     <Intro data={{"title": "Bringing People and Makers together.", "text": "We are changing the way that you go at getting what you need by connecting customers to makers who have the skill and tools to create what you need."}}/>
                 </CenterContainer>
                 <CenterContainer>
-                    <RoundBtnGroup data={{"buttons": ["View Products", "Register as Maker/Designer"], "links": ["Search", "RegisterMakerDesigner"]}}/>
+                    <RoundBtnGroup data={{"buttons": ["View Products", "Register as Maker/Designer"], "links": ["Search", "RegisterMaker"]}}/>
                 </CenterContainer>
             </HDivider>
             <HDivider data={{"style": "38%"}}>
-                <FeatureContainer data={{"title": "Feature Design", "images": ["", "", "", ""]}}/>
+                <FeatureGroup data={{"title": "Feature Designs", "images": ["", "", "", ""], links: ["", "", "", ""]}}/>
             </HDivider>
             <HDivider data={{"style": "17%"}}>
                 <IconTextBox data={{"images": ["", "", ""], "text": ["Choose your design and order", "Review generated quotes", "Request from your preferred Maker"]}}/>

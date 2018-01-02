@@ -47,5 +47,5 @@ ReactDOM.render((
         </HashRouter>
       </Provider>
     ),
-  document.getElementById('app')
+    document.getElementById('app')
 );

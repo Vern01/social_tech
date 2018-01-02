@@ -9,26 +9,11 @@ module.exports = {
 			__dirname,
 			'node_modules',
 			'app/components',
-			'app/components/containers'
+			'app/components/containers',
+            'app/builder',
+            'app/pages'
 		],
 		alias: {
-			//Builders:
-			DesignFormBuilder: 'app/builder/DesignFormBuilder',
-			FormBuilder: 'app/builder/FormBuilder',
-			RecursivePageBuilder: 'app/builder/RecursivePageBuilder',
-			//Pages
-      About: 'app/pages/About',
-			CustomerLogin: 'app/pages/CustomerLogin',
-			Dashboard: 'app/pages/Dashboard',
-			DesignerDashboard: 'app/pages/DesignerDashboard',
-      Home: 'app/pages/Home',
-			MakerDashboard: 'app/pages/MakerDashboard',
-			NewDesign: 'app/pages/NewDesign',
-			PickMaker: 'app/pages/PickMaker',
-			ProductView: 'app/pages/ProductView',
-			RegisterMakerDesigner: 'app/pages/RegisterMakerDesigner',
-			Search:'app/pages/Search',
-			Test: 'app/pages/Test',
 			BaseCss: 'app/styles/base',
 			//Redux:
 			reducers: 'app/reducers/reducers',

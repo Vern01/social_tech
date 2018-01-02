@@ -3,7 +3,7 @@ import React from 'react'
 let Paragraphs = ({texts}) => (
     <div className="p">
         {texts.map((text, index) => (
-            <div>{text}</div>
+            <div key={index}>{text}</div>
         ))}
     </div>
 );

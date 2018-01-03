@@ -21,7 +21,7 @@ class Search extends React.Component {
                         <VerticalMenu data={{tabs: ["Category1", "Category2", "Category3", "Category4", "Category5", "Category6"]}}/>
                     </FillNone>
                     <Fill>
-                        <ImageGroup data={{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""], links: []}}/>
+                        <ImageGroup data={{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""], links: ["ProductView"]}}/>
                     </Fill>
                 </FillContainer>
             </CenterContainer>

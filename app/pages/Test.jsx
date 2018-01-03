@@ -57,7 +57,7 @@ let array = {
     }]
 };
 
-class RegisterMakerDesigner extends React.Component {
+class RegisterMaker extends React.Component {
     render() {
         return (
             <RecursivePageBuilder root={array}/>
@@ -65,4 +65,4 @@ class RegisterMakerDesigner extends React.Component {
     }
 }
 
-export default RegisterMakerDesigner;
+export default RegisterMaker;

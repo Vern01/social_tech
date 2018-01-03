@@ -4,12 +4,18 @@ import {connect} from 'react-redux';
 import Body from "Body";
 import CenterContainer from "CenterContainer";
 import H1 from "H1";
+<<<<<<< HEAD
 import Paragraph from "Paragraph";
 import ApiContainer from "ApiContainer";
 import SwitchButtonContainer from 'SwitchButtonContainer';
 import SwitchButton from 'SwitchButton';
 
 import * as actions from 'actions';
+=======
+import P1 from "P1";
+import FormBuilder from "FormBuilder";
+import ApiContainer from "ApiContainer"
+>>>>>>> 7d53de5acdae9cb7061ae412bfa74fe6a0f68cb0
 
 class CustomerLogin extends React.Component {
 	constructor() {
@@ -41,6 +47,7 @@ class CustomerLogin extends React.Component {
             <Body>
             <CenterContainer data={{styles: {minHeight: "100%"}}}>
                 <H1 data={{text: "Login"}}/>
+<<<<<<< HEAD
                 <Paragraph data={{text: "Please login or register to create an account."}}/>
                 <form onSubmit={this.handleSubmit} className="form">
                   <div>
@@ -60,6 +67,10 @@ class CustomerLogin extends React.Component {
 					  </button>
 				  </SwitchButtonContainer>
                 </form>
+=======
+                <P1 data={{text: "Please login or register if you are new."}}/>
+                <FormBuilder data={{"types": ["TextInput", "PasswordInput"], "names": ["Email", "Password"], "submitName": "Submit", "links": ["Register"], "linkNames": ["Register"]}}/>
+>>>>>>> 7d53de5acdae9cb7061ae412bfa74fe6a0f68cb0
                 <ApiContainer/>
             </CenterContainer>
             </Body>

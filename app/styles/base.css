@@ -199,6 +199,7 @@ form {
     width: 100%;
     border: calc(0.2 * var(--unit)) solid #B5C0CC;
     border-radius: calc(1 * var(--unit));
+    padding: 0 calc(2 * var(--unit));
 }
 .form-input {
     height: calc(4 * var(--unit));
@@ -265,6 +266,7 @@ form {
 .input, .input-area {
     flex: 1 0 auto;
     margin-right: calc(6 * var(--unit));
+    padding: 0 calc(2 * var(--unit));
 }
 .input-area {
     height: calc(10 * var(--unit));

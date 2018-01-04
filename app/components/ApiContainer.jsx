@@ -5,13 +5,13 @@ class ApiContainer extends React.Component {
         return (
             <div className="api-container">
                 <div className="api-box">
-                    <img src="" alt="" className="api-image"/>
+                    <img src="icons/facebook_logo.png" alt="" className="api-image"/>
                 </div>
                 <div className="api-box">
-                    <img src="" alt="" className="api-image"/>
+                    <img src="icons/google_logo.png" alt="" className="api-image"/>
                 </div>
                 <div className="api-box">
-                    <img src="" alt="" className="api-image"/>
+                    <img src="icons/tweeter_logo.png" alt="" className="api-image"/>
                 </div>
             </div>
         );

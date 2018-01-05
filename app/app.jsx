@@ -1,7 +1,7 @@
 //Packages
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {HashRouter, Route} from 'react-router-dom'
+import {Router, Route} from 'react-router-dom'
 import {Provider} from 'react-redux';
 
 //Pages
@@ -26,9 +26,12 @@ var store = require('configureStore').configure();
 //Styles
 import 'style-loader!css-loader!BaseCss'
 
+//reactHistory
+import reactHistory from 'reactHistory'
+
 ReactDOM.render((
       <Provider store={store}>
-        <HashRouter>
+        <Router history={reactHistory}>
             <div>
                 <Header status='Register/Login'/>
                 <Route exact path="/" component={Home}/>
@@ -46,7 +49,7 @@ ReactDOM.render((
                 <Route path="/Customize" component={Customize}/>
                 <div className="footer divider-border"/>
             </div>
-        </HashRouter>
+        </Router>
       </Provider>
     ),
     document.getElementById('app')

@@ -9,7 +9,7 @@ class Header extends React.Component {
                 <NavLink to="/Search" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Search</NavLink>
                 <NavLink to="/Dashboard" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Dashboard</NavLink>
                 <div className="expander"/>
-                <NavLink to='/Register' activeStyle={{fontWeight: 'bold'}} className="nav-btn">{this.props.status}</NavLink>
+                <NavLink to='/Login' activeStyle={{fontWeight: 'bold'}} className="nav-btn">{this.props.status}</NavLink>
             </div>
         );
     }

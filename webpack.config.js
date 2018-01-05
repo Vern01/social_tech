@@ -18,7 +18,8 @@ module.exports = {
 			//Redux:
 			reducers: 'app/reducers/reducers',
 			actions: 'app/actions/actions',
-			configureStore: 'app/store/configureStore'
+			configureStore: 'app/store/configureStore',
+			reactHistory: 'app/history/history.jsx'
 		},
 		extensions: ['.js', '.jsx', '.css']
 	},

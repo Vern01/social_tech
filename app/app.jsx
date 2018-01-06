@@ -17,7 +17,7 @@ import DesignerDashboard from 'DesignerDashboard'
 import NewDesign from "NewDesign";
 import Search from 'Search'
 
-import 'style-loader!css-loader!BaseCss'
+import 'style-loader!css-loader!sass-loader!BaseCss'
 
 ReactDOM.render((
         <HashRouter>

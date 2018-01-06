@@ -9,12 +9,17 @@ import SwitchButtonContainer from 'SwitchButtonContainer';
 
 import {connect} from 'react-redux';
 import * as actions from 'actions';
+import reactHistory from 'reactHistory'
 
 class CustomerRegister extends React.Component {
 	constructor() {
 		super();
 
 		this.handleSubmit = this.handleSubmit.bind(this);
+	}
+
+	navLogin() {
+		reactHistory.push('/Login')
 	}
 
 	handleSubmit(e) {
@@ -60,10 +65,10 @@ class CustomerRegister extends React.Component {
                   </div>
 				  <SwitchButtonContainer>
 					  <button type="submit" className="switch-button">
-						  Login
+						  Submit
 					  </button>
-					  <button type="submit" className="switch-button">
-						  Register
+					  <button type="button" className="switch-button">
+						  Login
 					  </button>
 				  </SwitchButtonContainer>
                 </form>

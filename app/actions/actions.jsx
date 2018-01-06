@@ -45,6 +45,7 @@ export var startLoginUser = (username, password) => {
 
 		return signInRef.then(() => {
 			console.log('Sign in successfull');
+			reactHistory.push('/Home');
 		}, (e) => {
 			console.error('Error signing in user:', e.message);
 		});

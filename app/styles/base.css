@@ -230,7 +230,7 @@ form {
 }
 .image-group {
     max-height: 100%;
-    max-width: calc(60 * var(--unit));  
+    max-width: calc(60 * var(--unit));
     overflow: auto;
 }
 

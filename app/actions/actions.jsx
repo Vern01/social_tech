@@ -15,38 +15,41 @@ export var addItem = (item) => {
 
 export var startRegisterUser = (username, password1, password2) => {
 	console.log('Adding user to firebase.');
-	if (password1 !== password2) {
-		console.error("Passwords do not match.");
+	if (password1 != password2) {
+		alert("Passwords do not match.");
 	} else {
 		return (dispatch, getState) => {
 			var userRef = firebaseAuth.createUserWithEmailAndPassword(username, password1);
 
-				return userRef.then(() => {
-						console.log('User has been added to firebase!');
-						reactHistory.push('/login')
-				}, (e) => {
-						console.log('Error when adding user:', e.message);
-				});
-			}
+			return userRef.then(() => {
+				console.log('User has been added to firebase!');
+				reactHistory.push('/login')
+			}, (e) => {
+				alert('Error: ' + e.message);
+				console.log('Error when adding user:', e.message);
+			});
+		}
 	}
 }
 
-export var registerUser = (username) => {
+export var loginUser = (username) => {
 	return {
-		type: 'REGISTER_USER',
+		type: 'LOGIN_USER',
 		username
 	}
 }
 
 export var startLoginUser = (username, password) => {
 	console.log('Logging in user:', username);
-	return () => {
+	return (dispatch, getState) => {
 		var signInRef = firebaseAuth.signInWithEmailAndPassword(username, password);
 
 		return signInRef.then(() => {
 			console.log('Sign in successfull');
-			reactHistory.push('/Home');
+			dispatch(loginUser(username.substr(0, username.indexOf('@'))))
+			reactHistory.push('/');
 		}, (e) => {
+			alert('Error: ' + e.message);
 			console.error('Error signing in user:', e.message);
 		});
 	}
@@ -57,9 +60,11 @@ export var googleLogin = () => {
 		var googleRef = firebaseAuth.signInWithPopup(googleProvider);
 
 		return googleRef.then(() => {
+			reactHistory.push('/');
 			console.log('Sign in successfull');
 		}, (e) => {
 			console.error("Error with Google login:", e.message);
+			alert('Error: ' + e.message);
 		});
 	}
 }
@@ -69,9 +74,11 @@ export var facebookLogin = () => {
 		var facebookRef = firebaseAuth.signInWithPopup(facebookProvider);
 
 		return facebookRef.then(() => {
+			reactHistory.push('/');
 			console.log('Sign in successfull');
 		}, (e) => {
 			console.error("Error with Facebook login:", e.message);
+			alert('Error: ' + e.message);
 		});
 	}
 }
@@ -81,9 +88,11 @@ export var twitterLogin = () => {
 		var twitterRef = firebaseAuth.signInWithPopup(twitterProvider);
 
 		return twitterRef.then(() => {
+			reactHistory.push('/');
 			console.log('Sign in successfull');
 		}, (e) => {
 			console.error("Error with Twitter login:", e.message);
+			alert('Error: ' + e.message);
 		});
 	}
 }

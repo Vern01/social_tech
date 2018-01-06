@@ -67,7 +67,7 @@ class CustomerRegister extends React.Component {
 					  <button type="submit" className="switch-button">
 						  Submit
 					  </button>
-					  <button type="button" className="switch-button">
+					  <button type="button" className="switch-button" onClick={this.navLogin}>
 						  Login
 					  </button>
 				  </SwitchButtonContainer>

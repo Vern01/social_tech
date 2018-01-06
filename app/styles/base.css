@@ -65,7 +65,7 @@ form {
     text-align: center;
 }
 
-.len38 {
+.len42 {
     width: calc(42 * var(--unit));
 }
 
@@ -231,7 +231,7 @@ form {
 }
 .image-group {
     max-height: 100%;
-    max-width: calc(60 * var(--unit));  
+    max-width: calc(60 * var(--unit));
     overflow: auto;
 }
 

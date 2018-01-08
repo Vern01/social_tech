@@ -67,6 +67,7 @@ form {
 
 .len42 {
     width: calc(42 * var(--unit));
+    max-width: 70%;
 }
 
 .y-scrollable {
@@ -119,6 +120,7 @@ form {
 .feature-body {
     display: flex;
     overflow-x: auto;
+    padding: 0 0 18px;
 }
 
 

@@ -96,3 +96,21 @@ export var twitterLogin = () => {
 		});
 	}
 }
+
+export var logoutUser = () => {
+	return {
+		type: 'LOGOUT_USER'
+	}
+}
+
+export var startLogoutUser = () => {
+	return (dispatch) => {
+		return firebaseAuth.signOut().then(() => {
+			console.log('Logging Out user.');
+			dispatch(logoutUser());
+			//reactHistory.push('/');
+		}, (e) => {
+			alert('Error: ' + e.message)
+		})
+	}
+}

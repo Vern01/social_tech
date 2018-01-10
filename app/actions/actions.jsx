@@ -13,6 +13,8 @@ export var addItem = (item) => {
 	}
 }
 
+//user management
+
 export var startRegisterUser = (username, password1, password2) => {
 	console.log('Adding user to firebase.');
 	if (password1 != password2) {
@@ -39,6 +41,23 @@ export var loginUser = (username) => {
 	}
 }
 
+export var initUser = () => {
+	return (dispatch) => {
+		firebaseAuth.onAuthStateChanged((user) => {
+			if (user) {
+				//user loggin in
+				console.log('user in');
+				var username = user.email;
+				dispatch(loginUser(username.substr(0, username.indexOf('@'))));
+			} else {
+				//not logged in
+				console.log('user out');
+				dispatch(logoutUser());
+			}
+		});
+	}
+}
+
 export var startLoginUser = (username, password) => {
 	console.log('Logging in user:', username);
 	return (dispatch, getState) => {
@@ -46,7 +65,7 @@ export var startLoginUser = (username, password) => {
 
 		return signInRef.then(() => {
 			console.log('Sign in successfull');
-			dispatch(loginUser(username.substr(0, username.indexOf('@'))))
+			dispatch(loginUser(username.substr(0, username.indexOf('@'))));
 			reactHistory.push('/');
 		}, (e) => {
 			alert('Error: ' + e.message);
@@ -108,7 +127,7 @@ export var startLogoutUser = () => {
 		return firebaseAuth.signOut().then(() => {
 			console.log('Logging Out user.');
 			dispatch(logoutUser());
-			//reactHistory.push('/');
+			reactHistory.push('/Login');
 		}, (e) => {
 			alert('Error: ' + e.message)
 		})

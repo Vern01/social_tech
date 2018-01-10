@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import {connect} from 'react-redux';
 import * as actions from 'actions';
+import reactHistory from 'reactHistory';
 
 class Header extends React.Component {
 	constructor() {
@@ -13,8 +14,12 @@ class Header extends React.Component {
 	handleLogout() {
 		var {dispatch, user} = this.props;
 
-		if (user.length == 0) {
+		console.log(user);
+
+		if (user.length != 0) {
 			dispatch(actions.startLogoutUser());
+		} else {
+			reactHistory.push('/Login');
 		}
 	}
 
@@ -32,11 +37,13 @@ class Header extends React.Component {
                 <NavLink to="/Search" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Search</NavLink>
                 <NavLink to="/Dashboard" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Dashboard</NavLink>
                 <div className="expander"/>
-                <NavLink to='/Login' activeStyle={{fontWeight: 'bold'}} className="nav-btn" onClick={this.handleLogout}>{user}</NavLink>
+                <div className="nav-btn" onClick={this.handleLogout}>{user}</div>
             </div>
         );
     }
 }
+
+//<NavLink to='/Login' activeStyle={{fontWeight: 'bold'}} className="nav-btn" isActive={this.handleLogout}>{user}</NavLink>
 
 export default connect(
 	(state) => {

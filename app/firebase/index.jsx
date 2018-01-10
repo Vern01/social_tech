@@ -20,4 +20,6 @@ export var googleProvider = new firebase.auth.GoogleAuthProvider();
 export var facebookProvider = new firebase.auth.FacebookAuthProvider();
 export var twitterProvider = new firebase.auth.TwitterAuthProvider();
 
+firebaseAuth.setPersistence(firebase.auth.Auth.Persistence.SESSION);
+
 export default firebase;

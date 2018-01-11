@@ -20,3 +20,14 @@ export var usersReducer = (state = '', action) => {
     	return state;
   }
 }
+
+export var loadReducer = (state = false, action) => {
+	switch (action.type) {
+		case 'START_LOAD':
+			return true;
+		case 'STOP_LOAD':
+			return false;
+		default:
+			return state;
+	}
+}

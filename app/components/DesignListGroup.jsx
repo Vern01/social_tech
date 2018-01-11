@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import ListContainer from 'ListContainer'
 import DesignItem from 'DesignItem'

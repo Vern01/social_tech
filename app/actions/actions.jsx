@@ -65,10 +65,12 @@ export var startLoginUser = (username, password) => {
 
 		return signInRef.then(() => {
 			console.log('Sign in successfull');
+			dispatch(stopLoading());
 			dispatch(loginUser(username.substr(0, username.indexOf('@'))));
 			reactHistory.push('/');
 		}, (e) => {
 			alert('Error: ' + e.message);
+			dispatch(stopLoading());
 			console.error('Error signing in user:', e.message);
 		});
 	}
@@ -131,5 +133,19 @@ export var startLogoutUser = () => {
 		}, (e) => {
 			alert('Error: ' + e.message)
 		})
+	}
+}
+
+//loading
+
+export var startLoading = () => {
+	return {
+		type: 'START_LOAD'
+	}
+}
+
+export var stopLoading = () => {
+	return {
+		type: 'STOP_LOAD'
 	}
 }

@@ -34,6 +34,7 @@ class CustomerLogin extends React.Component {
 	    if (username.length > 0 && password.length > 0) {
 	      this.refs.username.value = '';
 	      this.refs.password.value = '';
+		  dispatch(actions.startLoading());
 	      dispatch(actions.startLoginUser(username, password));
 	    } else if (username.length == 0) {
 	      this.refs.username.focus();

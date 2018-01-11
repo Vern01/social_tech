@@ -24,7 +24,7 @@ import Search from 'Search'
 var store = require('configureStore').configure();
 
 //Styles
-import 'style-loader!css-loader!BaseCss'
+import 'style-loader!css-loader!sass-loader!BaseCss'
 
 //reactHistory
 import reactHistory from 'reactHistory'

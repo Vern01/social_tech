@@ -32,13 +32,13 @@ class ApiContainer extends React.Component {
         return (
             <div className="api-container">
                 <div className="api-box">
-                    <img src="" alt="" className="api-image" onClick={() => this.handleLogin('google')}/>
+                    <img src="icons/google_logo.png" alt="" className="api-image" onClick={() => this.handleLogin('google')}/>
                 </div>
                 <div className="api-box">
-                    <img src="" alt="" className="api-image" onClick={() => this.handleLogin('facebook')}/>
+                    <img src="icons/facebook_logo.png" alt="" className="api-image" onClick={() => this.handleLogin('facebook')}/>
                 </div>
                 <div className="api-box">
-                    <img src="" alt="" className="api-image" onClick={() => this.handleLogin('twitter')}/>
+                    <img src="icons/tweeter_logo.png" alt="" className="api-image" onClick={() => this.handleLogin('twitter')}/>
                 </div>
             </div>
         );

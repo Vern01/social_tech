@@ -4,7 +4,8 @@
   "description": "Recursive page building Application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "noder server.js"
   },
   "author": "MakeCo",
   "license": "MIT",

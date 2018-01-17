@@ -53,10 +53,10 @@ class MakerDashboard extends React.Component {
                 <SwitchButtonGroup data={{buttons: ["Account Info", "Designs", "Orders"], links: ["", "", "Dashboard"]}}/>
                 <FillContainer>
                     <FillNone>
-                        <VerticalMenu data={{tabs: ["New", "Improved", "Decline"]}}/>
+                        <VerticalMenu data={{tabs: ["New", "Improved", "Declined"]}}/>
                     </FillNone>
                     <Fill>
-                        <ImageGroup data={{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""], links: ["ProductView"]}}/>
+                        <ImageGroup data={{images: ["icons/table.jpg" ,"icons/robot.jpg", "icons/cover.jpg"], links: ["ProductView"]}}/>
                     </Fill>
                 </FillContainer>
             </CenterContainer>

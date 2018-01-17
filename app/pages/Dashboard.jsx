@@ -31,8 +31,8 @@ class Dashboard extends React.Component {
             <Body>
             <CenterContainer data={{styles: {minHeight: "100%"}}}>
                 <H1 data={{text: "My Dashboard"}}/>
-                <SwitchButtonGroup data={{buttons: ["My Account Info", "Previous Orders", "Active Orders"], links: ["", "", ""]}}/>
-                <TwoListGroup data={{left: ["Lego Piece", "Chair", "Lorem", "Ipsum", "Tabel"], right: ["View Order", "View Order", "View Order", "View Order", "View Order"]}}/>
+                <SwitchButtonGroup data={{buttons: ["My Account Info", "Previous Orders", "Active Orders"], links: ["Dashboard", "Dashboard", "Dashboard"]}}/>
+                <TwoListGroup data={{left: ["Lego Piece", "Chair", "Tabel"], right: ["View Order", "View Order", "View Order"]}}/>
             </CenterContainer>
             </Body>
         );

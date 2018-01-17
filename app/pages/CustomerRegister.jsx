@@ -48,7 +48,6 @@ class CustomerRegister extends React.Component {
     render() {
         return (
             <Body>
-            <Background data={{image: "/icons/sculptor.jpg"}}/>
             <CenterContainer data={{styles: {minHeight: "100%"}}}>
 				<CenterContainer data={{styles: {flex: "0 0 auto", padding: "calc(2 * var(--unit))", maxWidth: "calc(73 * var(--unit))", backgroundColor: "#FFF", borderRadius: "calc(2 * var(--unit))"}}}>
 					<H1 data={{text: "Register"}}/>

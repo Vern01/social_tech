@@ -26,7 +26,7 @@ class ProductView extends React.Component {
                 <FillContainer>
                     <FillNone>
                         <CenterContainer>
-                            <LargeImage data={{image: ""}}/>
+                            <LargeImage data={{image: "icons/table.jpg"}}/>
                         </CenterContainer>
                     </FillNone>
                     <Fill>

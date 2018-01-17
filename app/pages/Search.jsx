@@ -18,10 +18,10 @@ class Search extends React.Component {
                 </div>
                 <FillContainer>
                     <FillNone>
-                        <VerticalMenu data={{tabs: ["Category1", "Category2", "Category3", "Category4", "Category5", "Category6"]}}/>
+                        <VerticalMenu data={{tabs: ["Tables", "Vape", "HouseHold", "Sport", "Games", "Figures", "Phone Covers"]}}/>
                     </FillNone>
                     <Fill>
-                        <ImageGroup data={{images: ["", "", "", "", "", "", "", "", "", "", "", "", ""], links: ["ProductView"]}}/>
+                        <ImageGroup data={{images: ["icons/table.jpg", "icons/vape.jpg", "icons/stool.jpg", "icons/house.jpg", "icons/ping-pong.jpg", "icons/box.jpg", "icons/chess.jpg", "icons/platter.jpg", "icons/cover.jpg", "icons/clips.jpg", "icons/robot.jpg"], links: ["ProductView"]}}/>
                     </Fill>
                 </FillContainer>
             </CenterContainer>

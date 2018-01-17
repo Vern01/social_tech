@@ -64,10 +64,10 @@ class Home extends React.Component {
                 </CenterContainer>
             </HDivider>
             <HDivider data={{"style": "38%"}}>
-                <FeatureGroup data={{"title": "Feature Designs", "images": ["", "", "", ""], links: ["", "", "", ""]}}/>
+                <FeatureGroup data={{"title": "Feature Designs", "images": ["icons/table.jpg", "icons/vape.jpg", "icons/chess.jpg", "icons/cover.jpg"], links: ["ProductView", "", "", ""]}}/>
             </HDivider>
             <HDivider data={{"style": "17%"}}>
-                <IconTextBox data={{"images": ["", "", ""], "text": ["Choose your design and order", "Review generated quotes", "Request from your preferred Maker"]}}/>
+                <IconTextBox data={{"images": ["icons/shop.png", "icons/list.png", "icons/build.png"], "text": ["Choose your design and order", "Review generated quotes", "Request from your preferred Maker"]}}/>
             </HDivider>
             </Body>
         );

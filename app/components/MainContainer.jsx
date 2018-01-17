@@ -2,6 +2,7 @@ import React from 'react';
 import {Router, Route} from 'react-router-dom';
 import {connect} from 'react-redux';
 
+import Background from "Background";
 import Header from 'Header';
 import CustomerLogin from 'CustomerLogin';
 import CustomerRegister from 'CustomerRegister';
@@ -29,6 +30,7 @@ class MainContainer extends React.Component {
 				<div>
 					{loading ? <Loader/> : null}
 					<Header status='Register/Login'/>
+                    <Background data={{image: "icons/workstation.jpg"}}/>
 					<Route exact path="/" component={Home}/>
 					<Route path="/RegisterMaker" component={RegisterMaker}/>
 					<Route path="/RegisterDesigner" component={RegisterDesigner}/>

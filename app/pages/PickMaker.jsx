@@ -1,9 +1,7 @@
 import React from 'react'
 
-import RecursivePageBuilder from 'RecursivePageBuilder'
 import Body from "Body";
 import CenterContainer from "CenterContainer";
-import ModalContainer from "ModalContainer";
 import H2 from "H2";
 import P1 from "P1";
 import DesignListGroup from "DesignListGroup";
@@ -39,7 +37,7 @@ class PickMaker extends React.Component {
             <CenterContainer data={{styles: {minHeight: "100%"}}}>
                 <H2 data={{text: "Select a Maker to create your selected design."}}/>
                 <P1 data={{text:"Select a maker from the list of live quotes below."}}/>
-                <DesignListGroup data={{images: ["icons/gallery.png", "icons/gallery.png"], titles: ["Maker 1", "Maker 2"], counts: [2, 4], amounts: ["R200", "R250"]}}/>
+                <DesignListGroup data={{images: ["icons/profile1.png", "icons/profile2.png"], titles: ["Maker 1", "Maker 2"], counts: [2, 4], amounts: ["R200", "R250"]}}/>
             </CenterContainer>
             </Body>
         );

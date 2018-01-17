@@ -12,8 +12,8 @@ class DesignerDashboard extends React.Component {
             <Body>
             <CenterContainer>
                 <H1 data={{text: "Designer Dashboard"}}/>
-                <SwitchButtonGroup data={{buttons: ["My Account Info", "Designs", "Requests"], links: ["", "", ""]}}/>
-                <ImageGroup data={{images: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], links: []}}/>
+                <SwitchButtonGroup data={{buttons: ["My Account Info", "Designs", "Requests"], links: ["DesignerDashboard", "DesignerDashboard", "Dashboard"]}}/>
+                <ImageGroup data={{images: ["icons/table.jpg", "icons/house.jpg", "icons/platter.jpg", "icons/vape.jpg"], links: []}}/>
                 <RoundBtn data={{text: "Upload", link: "NewDesign"}}/>
             </CenterContainer>
             </Body>

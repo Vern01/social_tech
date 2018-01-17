@@ -36,6 +36,8 @@ class Header extends React.Component {
                 <NavLink exact to='/' activeStyle={{fontWeight: 'bold'}} className="nav-btn">BIB</NavLink>
                 <NavLink to="/Search" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Search</NavLink>
                 <NavLink to="/Dashboard" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Dashboard</NavLink>
+                <NavLink to="/DesignerDashboard" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Designer</NavLink>
+                <NavLink to="/MakerDashboard" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Maker</NavLink>
                 <div className="expander"/>
                 <div className="nav-btn" onClick={this.handleLogout}>{user}</div>
             </div>

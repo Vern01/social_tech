@@ -33,7 +33,7 @@ class Header extends React.Component {
 		}
         return (
             <div className="header divider-border">
-                <NavLink exact to='/' activeStyle={{fontWeight: 'bold'}} className="nav-btn">MakeCo</NavLink>
+                <NavLink exact to='/' activeStyle={{fontWeight: 'bold'}} className="nav-btn">BIB</NavLink>
                 <NavLink to="/Search" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Search</NavLink>
                 <NavLink to="/Dashboard" activeStyle={{fontWeight: 'bold'}} className="nav-btn">Dashboard</NavLink>
                 <div className="expander"/>

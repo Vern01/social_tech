@@ -1,15 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
+import Background from 'Background';
 import Body from "Body";
 import CenterContainer from "CenterContainer";
 import H1 from "H1";
 import Paragraph from "Paragraph";
 import ApiContainer from "ApiContainer";
 import SwitchButtonContainer from 'SwitchButtonContainer';
-import SwitchButton from 'SwitchButton';
-import P1 from "P1";
-import FormBuilder from "FormBuilder";
 import * as actions from 'actions';
 import reactHistory from 'reactHistory'
 
@@ -46,8 +44,10 @@ class CustomerLogin extends React.Component {
 	render() {
         return (
             <Body>
+			<Background data={{image: "/icons/sculptor.jpg"}}/>
             <CenterContainer data={{styles: {minHeight: "100%"}}}>
-                <H1 data={{text: "Login"}}/>
+				<CenterContainer data={{styles: {flex: "0 0 auto", padding: "calc(2 * var(--unit))", maxWidth: "calc(73 * var(--unit))", backgroundColor: "#FFF", borderRadius: "calc(2 * var(--unit))"}}}>
+					<H1 data={{text: "Login"}}/>
                 <Paragraph data={{text: "Please login or register to create an account."}}/>
                 <form onSubmit={this.handleSubmit} className="form">
                   <div>
@@ -68,6 +68,7 @@ class CustomerLogin extends React.Component {
 				  </SwitchButtonContainer>
                 </form>
                 <ApiContainer/>
+				</CenterContainer>
             </CenterContainer>
             </Body>
         );

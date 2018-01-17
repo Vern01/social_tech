@@ -365,6 +365,18 @@ form {
     align-items: center;
 }
 
+.background-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1000;
+  opacity: 0.3;
+}
+
 .loader {
   width: calc(14 * var(--unit));
   text-align: center;
